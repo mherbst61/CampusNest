@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { RandHNav } from "./NavBarComps/SiteNavButtons";
 import LoginButtonState from "./ScriptFuntions/LoginButtonState";
-
+import 'flowbite'
 
 export default function NavbarWithSearch() {
   const location = useLocation();
