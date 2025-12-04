@@ -4,6 +4,24 @@ import LoginButtonState from "./ScriptFuntions/LoginButtonState";
 import 'flowbite'; // REQUIRED for menu toggle to work
 
 export default function Navbar() {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Flowbite is already imported, but we can re-initialize menu listeners
+      // This is safe for React SSR / client-only
+      const collapseElements = document.querySelectorAll('[data-collapse-toggle]');
+      collapseElements.forEach((el) => {
+        el.addEventListener('click', () => {
+          const targetId = el.getAttribute('data-collapse-toggle');
+          const target = document.getElementById(targetId);
+          if (target) target.classList.toggle('hidden');
+        });
+      });
+    }
+  }, []);
+  
+  
+
+
 
   {/*This sets the variable state for logged in to change button*/}
 const [isLoggedIn, setIsLoggedIn] = useState(false);
