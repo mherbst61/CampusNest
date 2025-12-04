@@ -10,10 +10,12 @@ import HouseDetail from "./WebPages/HouseDetail.jsx";
 import RoomateDetail from "./WebPages/RoomateDetail.jsx";
 import Dashboard from "./WebPages/Dashboard.jsx";
 import RoomatePost from "./WebPages/RoomatePost.jsx"
+import HomePageNav from "./WebPages/SiteComps/NavBarComps/SiteNavButtons.jsx";
 
 export default function App() {
   return (
     <Router basename="/CampusNest">
+      <HomePageNav />
       <Routes>
         <Route path={Siteroutes.Home} element={<Home />} />
         <Route path={Siteroutes.LoginSignup} element={<Login />} />
