@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { RandHNav } from "./NavBarComps/SiteNavButtons";
 import LoginButtonState from "./ScriptFuntions/LoginButtonState";
 
+
 export default function NavbarWithSearch() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -42,7 +43,7 @@ export default function NavbarWithSearch() {
     <nav className="w-full bg-white dark:bg-blue-500 border-gray-200">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 gap-x-8">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src={`${import.meta.env.BASE_URL}public/real-estate-home-svgrepo-com.svg`} className="h-8" alt="CampusNest Temp Logo" />
+      <img src="real-estate-home-svgrepo-com.svg" className="h-8" alt="CampusNest Temp Logo" />
           <span className="self-center text-2xl dark:text-white font-semibold whitespace-nowrap">
             CampusNest
           </span>
