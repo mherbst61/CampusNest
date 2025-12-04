@@ -14,7 +14,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1">
   <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="public\real-estate-home-svgrepo-com.svg" className="h-8" alt="CampusNest Temp Logo" />
+      <img src="/CampusNest/real-estate-home-svgrepo-com.svg" className="h-8" alt="CampusNest Temp Logo" />
       <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CampusNest</span>
   </a>
   
