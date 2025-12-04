@@ -7,10 +7,13 @@ export default function Navbar() {
 
   {/*This sets the variable state for logged in to change button*/}
 const [isLoggedIn, setIsLoggedIn] = useState(false);
-
+   useEffect(() => {
+    // Re-import or re-initialize Flowbite if needed
+    import('flowbite');
+  }, []);
 
   return (
- <nav class="w-full bg-white border-gray-200 dark:bg-blue-500">
+ <nav className="w-full bg-white border-gray-200 dark:bg-blue-500">
 
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1">
   <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
