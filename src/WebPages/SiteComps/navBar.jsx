@@ -2,6 +2,8 @@ import { useState } from "react";
 import HomePageNav from "./NavBarComps/SiteNavButtons";
 import LoginButtonState from "./ScriptFuntions/LoginButtonState";
 import 'flowbite'; // REQUIRED for menu toggle to work
+import { useEffect } from "react";
+
 
 export default function Navbar() {
   useEffect(() => {
