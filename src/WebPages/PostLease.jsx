@@ -135,7 +135,7 @@ console.log("Temp") ;
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, async (u) => {
       if (!u) {
-        navigate("/Login");
+        navigate("/");
         return;
       }
     });

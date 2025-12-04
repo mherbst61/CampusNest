@@ -107,7 +107,7 @@ useEffect(() => {
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, async (u) => {
       if (!u) {
-        navigate("/Login");
+        navigate("/");
         return;
       }
       setUser(u);

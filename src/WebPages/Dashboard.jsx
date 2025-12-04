@@ -31,7 +31,7 @@ const [refreshHouse, setRefreshHouse] = useState(false); //For refreshing the ho
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, async (u) => {
       if (!u) {
-        navigate("/Login");
+        navigate("/");
         return;
       }
     });
