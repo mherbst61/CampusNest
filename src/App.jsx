@@ -15,7 +15,6 @@ import HomePageNav from "./WebPages/SiteComps/NavBarComps/SiteNavButtons.jsx";
 export default function App() {
   return (
     <Router basename="/CampusNest">
-      <HomePageNav />
       <Routes>
         <Route path={Siteroutes.Home} element={<Home />} />
         <Route path={Siteroutes.LoginSignup} element={<Login />} />
