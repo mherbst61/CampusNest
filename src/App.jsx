@@ -13,7 +13,7 @@ import RoomatePost from "./WebPages/RoomatePost.jsx"
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/CampusNest">
       <Routes>
         <Route path={Siteroutes.Home} element={<Home />} />
         <Route path={Siteroutes.LoginSignup} element={<Login />} />
