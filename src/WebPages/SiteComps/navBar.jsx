@@ -3,19 +3,22 @@ import HomePageNav from "./NavBarComps/SiteNavButtons";
 import LoginButtonState from "./ScriptFuntions/LoginButtonState";
 import 'flowbite'; // REQUIRED for menu toggle to work
 import { useEffect } from "react";
+import { initFlowbite } from "flowbite";
 
 
 export default function Navbar() {
-  useEffect(() => {
-      import ('flowbite');
-  }, []);
-  
-  
-
-
-
   {/*This sets the variable state for logged in to change button*/}
 const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+useEffect(()=>{
+  try{
+    initFlowbite();
+  } catch (err){
+    console.log("Flowbite initalize error"+err);
+  }
+},[]);
+
+
 
   return (
  <nav className="w-full bg-white border-gray-200 dark:bg-blue-500">
