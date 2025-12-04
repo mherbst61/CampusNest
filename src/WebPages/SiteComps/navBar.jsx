@@ -10,6 +10,7 @@ export default function Navbar() {
   {/*This sets the variable state for logged in to change button*/}
 const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+//Fix for dropdown in small screen or mobile view
 useEffect(()=>{
   try{
     initFlowbite();

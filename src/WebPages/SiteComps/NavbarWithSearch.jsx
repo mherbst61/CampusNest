@@ -39,6 +39,16 @@ export default function NavbarWithSearch() {
     });
   };
 
+  //Fix for dropdown in small screen or mobile view
+  useEffect(()=>{
+    try{
+      initFlowbite();
+    } catch (err){
+      console.log("Flowbite initalize error"+err);
+    }
+  },[]);
+
+
   return (
     <nav className="w-full bg-white dark:bg-blue-500 border-gray-200">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 gap-x-8">
