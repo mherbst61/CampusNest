@@ -23,7 +23,7 @@ const UserName =  user.displayName || "No UserName"; //this will probally be nee
 const UserProfileImg = user.photoURL || "src\assets\question-mark.png";
 
     return(
-      <div className="relative sm:mt-3 sm:mb-3 mt-0 mb-0">
+      <div className="sm:mt-3 sm:mb-3 mt-0 mb-0">
       <button type="button" className="flex text-sm bg-gray-600 rounded-full md:me-0 focus:ring-4 focus:ring-blue-300 dark:focus:ring-white-800" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
         <span className="sr-only">Open user menu</span>
         <img className="w-16 h-16 rounded-full" src={UserProfileImg} alt= {UserName + "User Photo"} />
