@@ -29,6 +29,7 @@ export default function HouseDetail() {
   const [item, setItem] = useState(null);
   const [busy, setBusy] = useState(true);
   const [err, setErr] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     (async () => {
@@ -59,7 +60,7 @@ export default function HouseDetail() {
       <main className="w-full max-w-6xl mx-auto px-4 sm:px-6 py-6 flex-1">
 <button
           type="button"
-          onClick={() => useNavigate(-1)}
+          onClick={() => navigate(-1)}
           className="mb-4 text-xs text-indigo-600 hover:underline">
           ← Back to House posts
         </button>
