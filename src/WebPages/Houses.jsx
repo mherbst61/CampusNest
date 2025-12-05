@@ -159,7 +159,7 @@ export default function Houses() {
       return l.imageUrls[0];
     }
     if (l.coverImage) return l.coverImage;
-    return "/CampusNest/real-estate-home-svgrepo-com.svg";
+    return "./real-estate-home-svgrepo-com.svg";
   };
 
   return (
