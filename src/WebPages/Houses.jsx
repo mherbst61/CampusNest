@@ -6,7 +6,7 @@ import BottomBar from "./SiteComps/BottomBar";
 import HeaderSite from "./SiteComps/HeaderSite";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import { getRecentListings } from "../services/listingService";
-import '../lib/leafletFix';  // <-- correct import
+import '../lib/leafletFix';
 
 const AMENITIES = [
   "In-unit Laundry",
@@ -159,7 +159,7 @@ export default function Houses() {
       return l.imageUrls[0];
     }
     if (l.coverImage) return l.coverImage;
-    return "/real-estate-home-svgrepo-com.svg";
+    return "/CampusNest/real-estate-home-svgrepo-com.svg";
   };
 
   return (
