@@ -15,7 +15,7 @@ const COLLECTION = "listings";
 const MAX_MB = 10, MAX_BYTES = MAX_MB * 1024 * 1024;
 const BED_OPTS = ["0","1","2","3","4","5","6+"];
 const BATH_OPTS = ["1","1.5","2","2.5","3","3.5","4+"];
-const PARK_OPTS = ["0","1","2","3","4","5+"];
+const PARK_OPTS = ["1","2","3","4","5+"];
 const AMENITIES = ["In-unit Laundry","On-site Laundry","Air Conditioning","Heating","Furnished","Gym","Pool","Wheelchair Accessible","Pet Friendly","High speed Internet", "Outdoor space","Elevator","Utilities included"];
 
 // ----- tiny helpers -----
