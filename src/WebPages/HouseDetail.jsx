@@ -5,6 +5,7 @@ import HeaderSite from "./SiteComps/HeaderSite";
 import NavbarWithSearch from "./SiteComps/NavbarWithSearch";
 import BottomBar from "./SiteComps/BottomBar";
 import { getListingById } from "../services/listingService";
+import { useNavigate } from "react-router-dom";
 
 // Leaflet
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
@@ -58,7 +59,7 @@ export default function HouseDetail() {
       <main className="w-full max-w-6xl mx-auto px-4 sm:px-6 py-6 flex-1">
         <button
           type="button"
-          onClick={() => navigate(-1)}
+          onClick={() => useNavigate(-1)}
           className="mb-4 text-xs text-indigo-600 hover:underline"
         >
           ← Back to House posts
