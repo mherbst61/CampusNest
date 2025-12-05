@@ -56,6 +56,13 @@ export default function HouseDetail() {
       </div>
 
       <main className="w-full max-w-6xl mx-auto px-4 sm:px-6 py-6 flex-1">
+        <button
+          type="button"
+          onClick={() => navigate(-1)}
+          className="mb-4 text-xs text-indigo-600 hover:underline"
+        >
+          ← Back to House posts
+        </button>
         {busy && <div>Loading…</div>}
         {err && <div className="text-red-600">{err}</div>}
 
